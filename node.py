@@ -1,6 +1,6 @@
 class Node:
 
-    def __init__(self, value, direita = None, esquerda = None):
+    def __init__(self, value, direita = None, esquerda = None, cima = None):
         self.value = value
         self.direita = direita
         self.esquerda = esquerda
@@ -10,4 +10,7 @@ class Node:
 
     def setEsquerda(self, esquerda):
         self.esquerda = esquerda
+
+    def showEsq(self):
+      return self.esquerda.value
         
